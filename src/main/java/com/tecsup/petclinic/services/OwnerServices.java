@@ -8,7 +8,5 @@ public interface OwnerServices {
 
     Owner save(Owner owner);
 
-    List<Owner> findAll();
-
     void deleteById(Integer id);
 }

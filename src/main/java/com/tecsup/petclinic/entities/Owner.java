@@ -3,7 +3,7 @@ package com.tecsup.petclinic.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Entity(name = "owner")
+@Entity(name = "owners")
 @Data
 public class Owner {
     @Id
@@ -27,6 +27,46 @@ public class Owner {
         this.nombres = nombres;
         this.address = address;
         this.telephone = telephone;
+        this.email = email;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 }

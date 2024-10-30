@@ -1,13 +1,15 @@
 package com.tecsup.petclinic.services;
 
 import com.tecsup.petclinic.entities.Owner;
-import com.tecsup.petclinic.repositories.OwnerRepository; // Asegúrate de tener este repositorio
+import com.tecsup.petclinic.repositories.OwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+
+
 @Service
 public class OwnerServicesImpl implements OwnerServices {
+
     @Autowired
     private final OwnerRepository ownerRepository;
 
@@ -25,8 +27,4 @@ public class OwnerServicesImpl implements OwnerServices {
         ownerRepository.deleteById(id);
     }
 
-    @Override
-    public List<Owner> findAll() {
-        return ownerRepository.findAll();
-    }
 }

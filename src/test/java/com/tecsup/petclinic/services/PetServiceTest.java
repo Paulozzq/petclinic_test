@@ -89,7 +89,7 @@ public class PetServiceTest {
     @Test
     public void testCreatePet() {
 
-        String PET_NAME = "Ponky";
+        String PET_NAME = "Leo";
         int OWNER_ID = 1;
         int TYPE_ID = 1;
 
