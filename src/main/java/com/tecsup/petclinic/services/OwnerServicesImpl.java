@@ -19,7 +19,7 @@ public class OwnerServicesImpl implements OwnerServices {
 
     @Override
     public Owner save(Owner owner) {
-        return ownerRepository.save(owner);
+        return null;
     }
 
     @Override
